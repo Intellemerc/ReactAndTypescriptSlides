@@ -1,0 +1,19 @@
+class Foo{
+    constructor(){
+        //any construction logic
+    }
+    get bar(){
+        return "bar";
+    }
+    someFnc(){
+      return "SomeFnc";
+    }
+}
+
+var f = new Foo();
+
+console.log(f.bar);
+// Result: bar
+
+console.log(f.someFnc())
+// Result: SomeFnc

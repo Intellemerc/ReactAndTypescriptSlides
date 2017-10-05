@@ -1,0 +1,10 @@
+var foo = function(){
+    return true
+}
+
+
+var foo = () => true;
+//or
+var foo = () => {
+    return true;
+};

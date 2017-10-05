@@ -1,0 +1,67 @@
+//Var
+var bar = "Begining text<br />";
+if(bar){
+  var bar = "Text from function<br />";
+  document.writeln(bar);
+}
+document.writeln(bar);
+
+
+
+
+
+
+
+
+
+
+
+/*
+Result:
+Text from function
+Text from function
+*/
+
+
+
+
+
+
+
+
+
+
+//let
+let bar = "Begining text<br />";
+if(bar){
+  let bar = "Text from function<br />";
+  document.writeln(bar);
+}
+document.writeln(bar);
+
+
+
+
+
+
+
+
+
+/*
+Text from function
+Begining text
+*/
+
+
+
+
+
+
+
+
+
+
+
+const bar2 = "some const text";
+bar2 = "some other text"
+//Uncaught TypeError: Assignment to constant variable.

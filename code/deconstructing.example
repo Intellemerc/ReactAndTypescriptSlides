@@ -1,0 +1,37 @@
+const foo = {
+    a: 'apple',
+    b: 'bee',
+    c: 'cable',
+    d: 'dock'
+};
+
+// Destructuring
+const { b } = foo;
+console.log(b);
+// Result: bee
+
+
+
+
+
+
+
+
+
+
+// Spread
+const bar = {
+    ...foo,
+    e: 'echo'
+    f: 'food'
+}
+console.log(bar);
+// Result:
+{
+    a: 'apple',
+    b: 'bee',
+    c: 'cable',
+    d: 'dock',
+    e: 'echo'
+    f: 'food'
+}

@@ -1,0 +1,29 @@
+//export a default function from file ./myFoo.js(or jsx/ts/tsx)
+export default () => {
+    //do something
+}
+
+import myFunc from './myFoo';
+myFunc();
+
+
+
+// export a named variable called foo
+// from file name ./foo.js
+export const foo = () => {
+    //do something
+}
+
+import { foo } from './foo'
+
+
+
+// import default value from react npm package
+import React from 'react'
+
+// import all exports from the react package
+import React as * from 'react'
+
+// import an export called myFunc from the 
+// file called myCustomCode.(js|jsx|ts|tsx)
+import { myFunc } from './myCustomCode'
