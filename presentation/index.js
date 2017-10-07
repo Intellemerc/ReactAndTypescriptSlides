@@ -25,6 +25,7 @@ import preloader from "spectacle/lib/utils/preloader";
 import { theme } from "spectacle-theme-solarized-dark";
 
 import esSlidesProm from "./Slides/ES2015";
+import anatomySlides from "./Slides/Anatomy";
 
 // Require CSS
 require("normalize.css");
@@ -61,9 +62,16 @@ export default class Presentation extends React.Component {
       });
       this.setState({ esSlides: importedSlides });
     });
+    const importedAnatomySlides = [];
+    Promise.all(anatomySlides).then((slidesImportsResolved) => {
+      slidesImportsResolved.forEach((slide) => {
+        importedAnatomySlides.push(slide.default);
+      });
+      this.setState({ anatomySlides: importedAnatomySlides });
+    });
   }
   render() {
-    const { esSlides } = this.state;
+    const { esSlides, anatomySlides } = this.state;
     return (
       <Deck transition={[]} transitionDuration={500} theme={theme}>
         <Slide transition={["zoom"]}>
@@ -82,7 +90,7 @@ export default class Presentation extends React.Component {
             <Appear>
               <ListItem>
                 React/Typescript
-                <List>
+                <List style={{ marginLeft: 35 }}>
                   <Appear>
                     <ListItem>Why Typescript</ListItem>
                   </Appear>
@@ -242,12 +250,11 @@ export default class Presentation extends React.Component {
             { loc: [3, 5], title: "Start the project" }
           ]}
         />
-        <Slide transition={["fade"]}>
-          <Heading caps>How does this help me?</Heading>
-          <Text textAlign="Center" lineHeight={5} textSize={52} bold caps>
-            Demo
-          </Text>
-        </Slide>
+        {anatomySlides
+          ? anatomySlides.map((slide) => {
+            return slide;
+          })
+          : null}
         <Slide transition={["fade"]}>
           <Heading caps>Contact Me</Heading>
           <List>

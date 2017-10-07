@@ -3,6 +3,7 @@ import CodeSlide from "spectacle-code-slide";
 
 export default (
   <CodeSlide
+    key="arrowfunction"
     transition={[]}
     lang="js"
     code={require("raw-loader!../../../code/arrowfunctions.example")}

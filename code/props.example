@@ -1,0 +1,35 @@
+import React from "react";
+import PropTypes from "prop-types";
+
+export class Foo extends React.Component {
+  render() {
+    const { bar } = this.props;
+    return <div>Value of Bar is {bar}</div>;
+  }
+}
+
+Foo.propTypes = {
+  bar: PropTypes.string
+};
+
+//usage
+<div>
+    <Foo bar="Some Text" />
+</div>
+//result: 
+<div>Value of Bar is Some Text</div>
+
+interface FooProps{
+    bar: string
+}
+export class Foo extends React.Component<FooProps, null>{
+    render() {
+        const { bar } = this.props;
+        return <div>Value of Bar is {bar}</div>;
+      }
+}
+
+//usage
+<div>
+    <Foo bar="Some Text" />
+</div>

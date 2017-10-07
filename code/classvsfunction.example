@@ -1,0 +1,19 @@
+import React from "react";
+
+export class Foo extends React.Component {
+  render() {
+    return <div>Test</div>;
+  }
+}
+
+export const Foo2 = () => {
+  return <div>Test</div>;
+};
+
+export const Foo4 = () => (
+  <div>
+    <span>Test</span>
+  </div>
+);
+
+export const Foo3 = () => <div>Test</div>;

@@ -1,0 +1,49 @@
+import React from "react";
+import PropTypes from "prop-types";
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      count: 0
+    };
+    this.addCount = this.addCount.bind(this);
+  }
+  addCount() {
+    this.setState({ count: ++this.state.count });
+  }
+  render() {
+    const { count } = this.state;
+    return (
+      <div>
+        <div>The current count is {count}</div>
+        <button onClick={this.addCount}>Click Me</button>
+      </div>
+    );
+  }
+}
+
+interface FooState {
+  count: number;
+}
+class Foo extends React.Component<null, FooState> {
+  constructor() {
+    super();
+    this.state = {
+      count: 0
+    };
+    this.addCount = this.addCount.bind(this);
+  }
+  addCount() {
+    this.setState({ count: ++this.state.count });
+  }
+  render() {
+    const { count } = this.state;
+    return (
+      <div>
+        <div>The current count is {count}</div>
+        <button onClick={this.addCount}>Click Me</button>
+      </div>
+    );
+  }
+}

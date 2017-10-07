@@ -3,6 +3,7 @@ import CodeSlide from "spectacle-code-slide";
 
 export default (
   <CodeSlide
+    key="importexport"
     transition={[]}
     lang="js"
     code={require("raw-loader!../../../code/importexport.example")}
