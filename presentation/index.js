@@ -25,7 +25,7 @@ import preloader from "spectacle/lib/utils/preloader";
 import { theme } from "spectacle-theme-solarized-dark";
 
 import esSlidesProm from "./Slides/ES2015";
-import anatomySlides from "./Slides/Anatomy";
+import anatomySlidesProm from "./Slides/Anatomy";
 
 // Require CSS
 require("normalize.css");
@@ -63,7 +63,7 @@ export default class Presentation extends React.Component {
       this.setState({ esSlides: importedSlides });
     });
     const importedAnatomySlides = [];
-    Promise.all(anatomySlides).then((slidesImportsResolved) => {
+    Promise.all(anatomySlidesProm).then((slidesImportsResolved) => {
       slidesImportsResolved.forEach((slide) => {
         importedAnatomySlides.push(slide.default);
       });
@@ -135,7 +135,7 @@ export default class Presentation extends React.Component {
             return slide;
           })
           : null}
-        <Slide transition={["zoom"]} bgColor="primary" key="andbeyond">
+        <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
             Webpack
           </Heading>
@@ -154,8 +154,8 @@ export default class Presentation extends React.Component {
             </Appear>
           </List>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary" key="andbeyond">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+        <Slide>
+          <Heading fit caps>
             Why Typescript?
           </Heading>
           <List>
@@ -181,8 +181,8 @@ export default class Presentation extends React.Component {
             </Appear>
           </List>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary" key="andbeyond">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+        <Slide>
+          <Heading fit caps>
             Why React?
           </Heading>
           <List>
@@ -206,8 +206,8 @@ export default class Presentation extends React.Component {
             </Appear>
           </List>
         </Slide>
-        <Slide transition={["zoom"]} bgColor="primary" key="andbeyond">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+        <Slide>
+          <Heading fit caps>
             Why Typescript and React together?
           </Heading>
           <List>
