@@ -8,8 +8,24 @@ export default (
     lang="js"
     code={require("raw-loader!../../../code/arrowfunctions.example")}
     ranges={[
-      { loc: [0, 3], title: "Arrow Functions: Traditional Way" },
-      { loc: [5, 10], title: "Arrow Functions: ES2015 Arrow Function" }
+      {
+        loc: [0, 3],
+        title: (
+          <div>
+            <div>Arrow Functions:</div>
+            <div>Traditional Way</div>
+          </div>
+        )
+      },
+      {
+        loc: [5, 10],
+        title: (
+          <div style={{ fontSize: "1em" }}>
+            <div>Arrow Functions:</div>
+            <div>ES2015 Arrow Function</div>
+          </div>
+        )
+      }
     ]}
   />
 );

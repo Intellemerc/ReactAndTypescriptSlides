@@ -10,9 +10,8 @@ export default (
     ranges={[
       { loc: [0, 4], title: "Default Export" },
       { loc: [5, 7], title: "Import a Default" },
-      { loc: [10, 15], title: "Named Export" },
-      { loc: [16, 17], title: "Named Import" },
-      { loc: [20, 29], title: "Misc Examples" }
+      { loc: [8, 13], title: "Named Export" },
+      { loc: [14, 15], title: "Named Import" }
     ]}
   />
 );
