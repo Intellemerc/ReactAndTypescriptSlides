@@ -94,13 +94,13 @@ export default class Presentation extends React.Component {
               <ListItem>ES6/ES2015</ListItem>
             </Appear>
             <Appear>
-              <ListItem>React</ListItem>
-            </Appear>
-            <Appear>
               <ListItem>Webpack</ListItem>
             </Appear>
             <Appear>
               <ListItem>Typescript</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>React</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -267,13 +267,15 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide transition={["fade"]}>
-          <Heading caps>Typescript - Usage(NPM downloads)</Heading>
+          <Heading caps style={{ fontSize: "2em" }}>
+            Typescript - Usage(NPM downloads)
+          </Heading>
           <Image src={images.npmDownloads} />
           <Link
-            href="https://npm-stat.com/charts.html?package=babel&package=typescript&package=flow-bin&from=2016-10-01&to=2017-03-31"
+            href="https://npm-stat.com/charts.html?package=typescript&package=flow-bin&package=angular&package=react&from=2016-10-01&to=2017-09-30"
             target="blank"
           >
-            <span style={{ fontSize: 12 }}>*Source</span>
+            <div style={{ fontSize: 12 }}>*Source</div>
           </Link>
         </Slide>
         <CodeSlide
@@ -291,6 +293,11 @@ export default class Presentation extends React.Component {
             { loc: [3, 5], title: "Start the project" }
           ]}
         />
+        <Slide transition={["zoom"]} bgColor="primary" key="andbeyond">
+          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+            Project Demo
+          </Heading>
+        </Slide>
         <CodeSlide
           key="classvsfunction"
           transition={[]}
