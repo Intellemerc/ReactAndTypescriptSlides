@@ -533,11 +533,11 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["zoom"]} bgColor="primary" key="andbeyond">
           <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Demo
+            React Demo
           </Heading>
         </Slide>
         <Slide transition={["fade"]}>
-          <Heading caps>Contact Me</Heading>
+          <Heading caps>Questions?</Heading>
           <List>
             <ListItem lineHeight={5}>Twitter: @Intellemerc</ListItem>
             <ListItem lineHeight={5}>
