@@ -59,142 +59,22 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <Appear>
-              <ListItem>Definitions and Background</ListItem>
+              <ListItem>Why Typescript</ListItem>
             </Appear>
             <Appear>
-              <ListItem>
-                React/Typescript
-                <List style={{ marginLeft: 35 }}>
-                  <Appear>
-                    <ListItem>Why Typescript</ListItem>
-                  </Appear>
-                  <Appear>
-                    <ListItem>Why React</ListItem>
-                  </Appear>
-                  <Appear>
-                    <ListItem>Anatomy of a React Component</ListItem>
-                  </Appear>
-                  <Appear>
-                    <ListItem>Use with Typescript</ListItem>
-                  </Appear>
-                </List>
-              </ListItem>
-            </Appear>
-          </List>
-        </Slide>
-        <Slide transition={["fade"]}>
-          <Heading size={1} caps>
-            Poll
-          </Heading>
-          <Appear>
-            <Text>Familiar with:</Text>
-          </Appear>
-          <List>
-            <Appear>
-              <ListItem>ES6/ES2015</ListItem>
+              <ListItem>Why React</ListItem>
             </Appear>
             <Appear>
-              <ListItem>Webpack</ListItem>
+              <ListItem>Why use React and Typescript</ListItem>
             </Appear>
             <Appear>
-              <ListItem>Typescript</ListItem>
+              <ListItem>Anatomy of a React Component</ListItem>
             </Appear>
             <Appear>
-              <ListItem>React</ListItem>
-            </Appear>
-          </List>
-        </Slide>
-        <CodeSlide
-          key="arrowfunction"
-          transition={[]}
-          lang="js"
-          code={require("raw-loader!../code/arrowfunctions.example")}
-          ranges={[
-            {
-              loc: [0, 3],
-              title: (
-                <div>
-                  <div>Arrow Functions:</div>
-                  <div>Traditional Way</div>
-                </div>
-              )
-            },
-            {
-              loc: [5, 10],
-              title: (
-                <div style={{ fontSize: "1em" }}>
-                  <div>Arrow Functions:</div>
-                  <div>ES2015 Arrow Function</div>
-                </div>
-              )
-            }
-          ]}
-        />
-        <CodeSlide
-          key="deconstructor"
-          transition={[]}
-          lang="js"
-          code={require("raw-loader!../code/deconstructing.example")}
-          ranges={[
-            { loc: [0, 6], title: "Our Data" },
-            { loc: [7, 11], title: "Destructuring" },
-            { loc: [21, 28], title: "Spread" },
-            { loc: [28, 37], title: "Spread" }
-          ]}
-        />
-        <CodeSlide
-          key="importexport"
-          transition={[]}
-          lang="js"
-          code={require("raw-loader!../code/importexport.example")}
-          ranges={[
-            { loc: [0, 4], title: "Default Export" },
-            { loc: [5, 7], title: "Import a Default" },
-            { loc: [8, 13], title: "Named Export" },
-            { loc: [14, 15], title: "Named Import" }
-          ]}
-        />
-        <Slide transition={["zoom"]} bgColor="primary" key="andbeyond">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            And Beyond...
-          </Heading>
-          <List>
-            <Appear>
-              <ListItem>Classes</ListItem>
+              <ListItem>Use with Typescript</ListItem>
             </Appear>
             <Appear>
-              <ListItem>Const/Let</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>String Interpolation</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>and more...(Generators, Default Args, etc</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                but wait there's more... ES7+(Async/Await, Decorators for
-                example)
-              </ListItem>
-            </Appear>
-          </List>
-        </Slide>
-        <Slide transition={["zoom"]} bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-            Webpack
-          </Heading>
-          <List>
-            <Appear>
-              <ListItem>Module bundler</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Dependency Graph</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Build Chain</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Backwards Compatibility</ListItem>
+              <ListItem>Demo</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -204,14 +84,21 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <Appear>
+              <ListItem>Strong Typing</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Type Inference</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Can Mix TS and JS</ListItem>
+            </Appear>
+            <Appear>
               <ListItem>Super set of Javascript</ListItem>
             </Appear>
             <Appear>
               <ListItem>Kept up to date(Bi-Monthly releases)</ListItem>
             </Appear>
-            <Appear>
-              <ListItem>Can Mix TS and JS</ListItem>
-            </Appear>
+
             <Appear>
               <ListItem>Zero Runtime cost(compiled down to JS)</ListItem>
             </Appear>
@@ -219,9 +106,6 @@ export default class Presentation extends React.Component {
               <ListItem>
                 Great Tooling(autocomplete, refactor support, and errors)
               </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Type Inference</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -256,13 +140,13 @@ export default class Presentation extends React.Component {
               <ListItem>Strong typing</ListItem>
             </Appear>
             <Appear>
-              <ListItem>PropTypes not needed</ListItem>
-            </Appear>
-            <Appear>
               <ListItem>Easy refactor of components</ListItem>
             </Appear>
             <Appear>
               <ListItem>Type definitions for autocomplete</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>PropTypes not needed</ListItem>
             </Appear>
           </List>
         </Slide>
