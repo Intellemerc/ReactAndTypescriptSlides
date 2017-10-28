@@ -151,10 +151,10 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
         <Slide transition={["fade"]}>
-          <Heading caps style={{ fontSize: "2em" }}>
-            Typescript - Usage(NPM downloads)
+          <Heading caps style={{ fontSize: "1em" }}>
+            Typescript - Downloads
           </Heading>
-          <Image src={images.npmDownloads} />
+          <Image src={images.npmDownloads} height={600} />
           <Link
             href="https://npm-stat.com/charts.html?package=typescript&package=flow-bin&package=angular&package=react&from=2016-10-01&to=2017-09-30"
             target="blank"
